@@ -9,11 +9,13 @@ At the moment, this exporter contains 2 metrics:
 **user_pass_fail** - is a metric that includes the user's name if the password is entered incorrectly 3 times in 1 minute. 
 
 For example:
+
 user_pass_fail{username="test-user"} 6.0
 
 **ip_user_pass_fail** - is a metric that contains the IP addresses from which unsuccessful attempts were made to enter the account password.
 
 For example:
+
 ip_user_pass_fail{ip="132.144.32.50",username="test-user"} 1.0
 ip_user_pass_fail{ip="212.69.120.22",username="test-user"} 5.0
 
